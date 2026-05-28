@@ -6,8 +6,6 @@ export default defineConfig({
   },
   nitro: false,
   vite: {
-    build: {
-      outDir: "dist",
-    },
+    base: "/",
   },
 });
