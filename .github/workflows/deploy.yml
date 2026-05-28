@@ -20,9 +20,10 @@ jobs:
           bun-version: latest
       - run: bun install --frozen-lockfile
       - run: bun run build
+      - run: node scripts/prerender.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./dist/client
   deploy:
     needs: build
     runs-on: ubuntu-latest
