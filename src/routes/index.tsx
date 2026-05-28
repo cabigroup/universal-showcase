@@ -180,8 +180,8 @@ function Index() {
         <section className="relative min-h-[100svh] flex items-end overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src={img("https://images.unsplash.com/photo-1441986300917-64674bd600d8")}
-              alt="Showroom di elettronica curato"
+              src={img("https://images.unsplash.com/photo-1593344484962-796055d4a3a4")}
+              alt="Dispositivi di elettronica di consumo disposti con cura"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0f1e3d] via-[#0f1e3d]/55 to-[#0f1e3d]/15" />
