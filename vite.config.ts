@@ -4,4 +4,10 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
+  nitro: false,
+  vite: {
+    build: {
+      outDir: "dist",
+    },
+  },
 });
