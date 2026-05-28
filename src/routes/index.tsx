@@ -132,9 +132,9 @@ function Index() {
             : "bg-transparent"
         }`}
       >
-        <div className="mx-auto max-w-7xl px-6 lg:px-10 flex items-center justify-between h-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 flex items-center justify-between h-24 md:h-28">
           <a href="#top" className="flex items-center gap-3">
-            <img src={logo} alt="Universal Commerce" className="h-9 md:h-10 w-auto" />
+            <img src={logo} alt="Universal Commerce" className="h-14 md:h-20 w-auto" />
           </a>
           <nav className="hidden md:flex items-center gap-10">
             {menu.map((m) => (
@@ -350,7 +350,7 @@ function Index() {
         <footer className="bg-[#0a1530] text-[#f5f0e8]/80 py-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-3 gap-10 text-sm leading-relaxed">
             <div>
-              <img src={logo} alt="Universal Commerce" className="h-8 w-auto mb-5 brightness-0 invert opacity-90" />
+              <img src={logo} alt="Universal Commerce" className="h-16 md:h-20 w-auto mb-6 brightness-0 invert opacity-90" />
               <p className="text-[#f5f0e8]/60">
                 Importazione, distribuzione e vendita di elettronica di consumo e prodotti per la persona e la casa.
               </p>
