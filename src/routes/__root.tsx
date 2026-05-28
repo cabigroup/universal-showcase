@@ -73,22 +73,40 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Universal Commerce — Elettronica, tecnologia e molto altro" },
-      { name: "description", content: "Universal Commerce S.R.L. — importazione, distribuzione e vendita di elettronica di consumo, informatica e prodotti per la persona e la casa. Sede a Mercogliano (AV)." },
-      { name: "author", content: "Universal Commerce" },
-      { property: "og:title", content: "Universal Commerce" },
-      { property: "og:description", content: "Elettronica, tecnologia e molto altro. Ingrosso e dettaglio, anche online." },
+      {
+        name: "description",
+        content:
+          "Universal Commerce S.R.L. — importazione, distribuzione e vendita di elettronica di consumo, informatica e prodotti per la persona e la casa. Sede a Mercogliano (AV).",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@UniversalCommerce" },
+      { property: "og:url", content: "https://universalcommercesrl.com" },
+      { property: "og:title", content: "Universal Commerce — Elettronica, tecnologia e molto altro" },
+      {
+        property: "og:description",
+        content:
+          "Importazione, distribuzione e vendita di elettronica di consumo. Ingrosso e dettaglio, anche online. Sede a Mercogliano (AV).",
+      },
+      { property: "og:image", content: "https://universalcommercesrl.com/og-image.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Universal Commerce — Elettronica, tecnologia e molto altro" },
+      {
+        name: "twitter:description",
+        content:
+          "Importazione, distribuzione e vendita di elettronica di consumo. Ingrosso e dettaglio, anche online.",
+      },
+      { name: "twitter:image", content: "https://universalcommercesrl.com/og-image.jpg" },
     ],
     links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,
